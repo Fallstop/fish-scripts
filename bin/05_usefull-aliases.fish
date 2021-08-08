@@ -6,6 +6,7 @@ alias lla="lal"
 alias ld="exa -D"
 alias ldl="exa -Dl"
 alias lld="ldl"
+alias cdnt="cd -"
 
 if test -e "/etc/arch-release"
     alias i="yay -Yy"
