@@ -28,7 +28,7 @@ sed -e '$s/$/\n/' -s ~/Documents/projects/fish-scripts/bin/*_*.fish | source
      - yay (Arch Only)
      - cowsay
  - Package Ranker (Arch Only)
-     - rate-mirrors (available on AUR)
+     - rankmirrors
  - Devscript
      - GKrak script
      - Code
@@ -36,3 +36,7 @@ sed -e '$s/$/\n/' -s ~/Documents/projects/fish-scripts/bin/*_*.fish | source
      - Gitkraken
  - Codin
      - "CodinGame" folder under $PROJECTS_DIR
+ - Aliases
+     - Cowsay
+     - exa
+     - yay

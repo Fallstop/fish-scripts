@@ -4,8 +4,6 @@ function gib
     set start_time (date +%s)
 
     if test -e "/etc/arch-release"
-        printf "\nTesting Mirrors\n"
-        test-mirrors
         printf "\nUpdating yay\n"
         yay -Suy --noconfirm
     end
