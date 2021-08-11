@@ -10,4 +10,5 @@ alias cdnt="cd -"
 
 if test -e "/etc/arch-release"
     alias i="yay -Yy"
+    alias r="yay -R"
 end
