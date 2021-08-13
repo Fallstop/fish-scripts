@@ -8,7 +8,7 @@ function gib
         yay -Suy --noconfirm
     end
 
-    if test -e "/etc/debian-version"
+    if test -e "/etc/debian_version"
         printf "\nUpdating APT\n"
         sudo apt update
         sudo apt full-upgrade -y
