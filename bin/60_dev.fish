@@ -34,4 +34,5 @@ end
 
 complete --command dev --arguments '(dev_complete)'
 complete --command devc --arguments '(dev_complete)'
+complete --command devg --arguments '(dev_complete)'
 complete --command devgc --arguments '(dev_complete)'
