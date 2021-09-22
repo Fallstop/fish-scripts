@@ -12,6 +12,8 @@ alias lll="ls -lTR"
 
 alias cdnt="cd -"
 
+alias calc="kalker"
+
 if test -e "/etc/arch-release"
     alias i="yay -Yy"
     alias r="yay -R"

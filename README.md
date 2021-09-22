@@ -40,5 +40,6 @@ sed -e '$s/$/\n/' -s ~/Documents/projects/fish-scripts/bin/*_*.fish | source
      - Cowsay
      - exa
      - yay
+     - kalker
  - GUI
      - Dolphin
