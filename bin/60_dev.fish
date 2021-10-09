@@ -24,15 +24,19 @@ alias devcg=devgc
 function dev_complete
     # Get project name
     set arg (commandline -ct)
-
+    
+    # save our PWD
+    set saved_pwd $PWD
 
     # cd to $PROJECTS (and then back after)
-    # while in $PROJECTS, complete as if we are 'cd'
-    and complete -C"cd $arg"
-    builtin cd $PROJECTS_DIR/
+    # while in $PROJECTS_DIR, complete as if we are 'cd'
+    builtin cd $PROJECTS_DIR    
+    and complete -C "cd $arg"
+    builtin cd $saved_pwd
 end
 
-complete --command dev --arguments '(dev_complete)'
+complete --command dev --no-files --arguments='(exa -D $PROJECTS_DIR)'
+#complete --command dev --arguments '(dev_complete)'
 complete --command devc --arguments '(dev_complete)'
 complete --command devg --arguments '(dev_complete)'
 complete --command devgc --arguments '(dev_complete)'
