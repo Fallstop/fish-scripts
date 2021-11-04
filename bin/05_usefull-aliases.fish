@@ -15,6 +15,6 @@ alias cdnt="cd -"
 alias calc="kalker"
 
 if test -e "/etc/arch-release"
-    alias i="yay -Yy"
-    alias r="yay -R"
+    alias i="conda deactivate && yay -Yy && conda activate"
+    alias r="conda deactivate && yay -R && conda activate"
 end

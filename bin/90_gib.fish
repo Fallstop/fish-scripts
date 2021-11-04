@@ -5,7 +5,9 @@ function gib
 
     if test -e "/etc/arch-release"
         printf "\nUpdating yay\n"
+        conda deactivate
         yay -Suy --noconfirm
+        conda activate
     end
 
     if test -e "/etc/debian_version"
@@ -42,7 +44,7 @@ function gib
     curl -fsSL https://starship.rs/install.sh > /tmp/installStarship.sh
     sudo sh /tmp/installStarship.sh -y
     rm /tmp/installStarship.sh -f
-    
+ 
     set total_time (math (date +%s) - $start_time)
     cowsay "That took $total_time seconds too long."
 end
