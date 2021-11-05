@@ -13,8 +13,3 @@ alias lll="ls -lTR"
 alias cdnt="cd -"
 
 alias calc="kalker"
-
-if test -e "/etc/arch-release"
-    alias i="conda deactivate && yay -Yy && conda activate"
-    alias r="conda deactivate && yay -R && conda activate"
-end
