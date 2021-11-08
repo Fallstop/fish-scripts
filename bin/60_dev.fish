@@ -5,7 +5,11 @@ end
 
 function devc
     dev $argv
-    code .
+    if test -e ./main.code-workspace
+        code ./main.code-workspace
+    else
+        code .
+    end
 end
 
 function devg
@@ -14,8 +18,7 @@ function devg
 end
 
 function devgc
-    dev $argv
-    code .
+    devc $argv
     gkrak
 end
 

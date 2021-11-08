@@ -4,7 +4,7 @@ Useful scripts to be auto loaded into path.
 > Note: Only tested with Manjaro and Debian/Ubuntu, and designed for KDE
 
 
-The scripts have lables of 00 (utility functions)->99 (higher level scripts) of the order they should be loaded. To disable, just remove the "XX_" prefix.
+The scripts have labels of 00 (utility functions)->99 (higher level scripts) of the order they should be loaded. To disable, just remove the "XX_" prefix.
 
 To load in all scripts (example):
 ```fish
@@ -14,7 +14,7 @@ set PROJECTS_DIR ~/Documents/projects
 sed -e '$s/$/\n/' -s ~/Documents/projects/fish-scripts/bin/*_*.fish | source
 ```
 
-## Dependices
+## Dependencies
  - All scripts are for fish
  - Update Script:
      - anaconda
