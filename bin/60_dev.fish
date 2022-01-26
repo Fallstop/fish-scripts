@@ -1,6 +1,10 @@
 
 function dev
-    cd $PROJECTS_DIR/$argv
+    if count $argv > /dev/null
+        cd $PROJECTS_DIR/$argv
+    else
+        cd $PROJECTS_DIR
+    end
 end
 
 function devc
