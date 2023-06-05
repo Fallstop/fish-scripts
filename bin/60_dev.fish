@@ -42,7 +42,7 @@ function dev_complete
     builtin cd $saved_pwd
 end
 
-complete --command dev --no-files --arguments='(exa -D $PROJECTS_DIR)'
-complete --command devc --no-files --arguments='(exa -D $PROJECTS_DIR)'
-complete --command devg --no-files --arguments='(exa -D $PROJECTS_DIR)'
-complete --command devgc --no-files --arguments='(exa -D $PROJECTS_DIR)'
+complete --command dev --arguments='(dev_complete)'
+complete --command devc --arguments='(dev_complete)'
+complete --command devg --arguments='(dev_complete)'
+complete --command devgc --arguments='(dev_complete)'
