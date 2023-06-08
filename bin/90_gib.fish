@@ -34,11 +34,11 @@ function gib
     printf "\nUpdating Yarn\n"
     yarn global upgrade
 
-    printf "\nUpdating NPM\n"
-    npm install -g npm
+    #printf "\nUpdating NPM\n"
+    #npm install -g npm
 
-    printf "\nUpdating Conda\n"
-    conda update --prefix ~/anaconda3 anaconda -y
+    #printf "\nUpdating Conda\n"
+    #conda update --prefix ~/anaconda3 anaconda -y
 
     printf "\nUpdating Starship\n"
     curl -fsSL https://starship.rs/install.sh > /tmp/installStarship.sh
